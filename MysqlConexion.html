@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>TIENDA DE MUSICA</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+	<a href="mysql.html">Volver</a>
+
+			<pre>
+				<p>
+					<font size="4">
+					
+						package com.tiendaDeMusica.DAO.mysql;
+
+
+						import java.sql.Connection;
+						import java.sql.DriverManager;
+						import java.sql.SQLException;
+
+						public class mysqlConexion {
+						    Connection conectar() throws SQLException {
+						        Connection conexion = null;
+						        String url = "jdbc:mysql://127.0.0.1:3306/tienda de musica";
+						        String usuario = "root";
+						        String contrasena = "";
+
+						        try {
+						            conexion = DriverManager.getConnection(url, usuario, contrasena);
+						            if (conexion != null) {
+						                System.out.println("Conexion establecida muchas gracias");
+						            } else {
+						                System.out.println("Error al conectar");
+						            }
+						        } catch (SQLException sqle) {
+						            throw sqle;
+						        }
+						        return conexion;
+						    }
+						}
+
+
+					</font>	
+				</p>
+			</pre>
+		</code>	
+		
+
+
+</body>
+</html>
+
+

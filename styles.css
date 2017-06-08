@@ -1,0 +1,30 @@
+body {
+
+  color: white;
+  background-image: url('programa.jpg');
+  
+      
+}
+
+.fondo{
+
+	background: black;
+}
+
+a{
+
+	color: white;
+
+}
+
+.boton{
+    text-decoration: none;
+    padding: 6px;
+    font-size: 13px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 4px solid #F781F3;
+  }
+
+
